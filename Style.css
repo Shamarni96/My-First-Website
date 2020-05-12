@@ -1,6 +1,9 @@
 body {
 background-color: cadetblue;
 }
+intro {
+    text-align: center;
+}
 img {
     width: 30%;
 }
