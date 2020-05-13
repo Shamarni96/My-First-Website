@@ -1,60 +1,168 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Agile and Scrum</title>
+        <link href="Style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <img src= "data:image/png;base64,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" class="profile-img">
+            <nav>
+                <ul>
+                    <li><a href="#contents">contents</a></li>
+                    <li><a href="#agile">agile</a></li>
+                    <li><a href="#scrum">scrum</a></li>
+                    <li><a href="#scrum-methods">scrum methods</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="contents">
+                <div class="section-inner">
+                    <h1>Contents</h1>
+                    <table>
+                     <tr>
+                      <th>Contents</th>
+                      <th>Page</th>
+                     </tr>
+                     <tr>
+                         <td><a href="#agile">Agile</a></td>
+                         <td>- 1</td>
+                     </tr>
+                     <tr>
+                         <td><a href="#scrum">Scrum</a></td>
+                         <td>- 2</td>
+                     </tr>
+                     <tr>
+                         <td><a href="#scrum-methods">Scrum methods</a></td>
+                         <td>- 3</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#sprints">Sprints</a></td>
+                        <td>- 4</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#ceremonies">Ceremonies</a></td>
+                        <td>- 5</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#backlogs">Backlogs</a></td>
+                        <td>- 6</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#standups">Standups</td>
+                        <td>- 7</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#reviews">Sprint reviews</td>
+                        <td>- 8</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#retro">Retrospectives</td>
+                        <td>- 9</td>
+                    </tr>
+                    </table>
+                </div>
 
-<head>
-    <title>My First Website</title>
-    <link href="Style.css" rel="stylesheet" type="text/css" />
-</head>
+            </section>
 
-<body>
-    <h1>Agile and Scrum</h1>
-    <hr>
-    <p id="Intro"> This is my first website. On this page,
-        <br>
-        <br>
-        I will be explaining some key points about <em>agile</em> and <em>Scrum</em>
-        <br>
-        in software engineering.</p>
+            <section id="agile">
+                <div class="section-inner">
+                    <img src="data:image/png;base64,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" class="profile-img">
+                    <h1>Agile and Scrum</h1>
+                    <h2>Agile</h2>
+                    <h3>What is agile?</h3>
+                    <p>Agile is essentially a process in which you work towards shorter term goals and get them done,
+                        <br>
+                        implementing them into the program and allowing the client(user) to use the program even though it is not
+                        finished.
+                    </p>
+                </div>
+            </section>
 
-    <div>
-    <h2>Agile</h2>
-    <h3>What is agile?</h3>
+            <section id="scrum">
+                <div class="section-inner">
+                    <h2>Scrum</h2>
+                    <h3>What is scrum?</h3>
+                    <p>Scrum is an agile project management framework that teams use to develop, deliver and sustain complex products. Agile is a mindset. Scrum is a way of working.
+                </p>
+                </div>
+            </section>
 
-    <p>Agile is essentially a process in which you work towards shorter term goals and get them done,
-        <br>
-        implementing them into the program and allowing the client(user) to use the program even though it is not
-        finished.</p>
-    <img src="https://miro.medium.com/max/1024/0*jlUybkZYz6yxWtdk.jpg">
-    </div>
-   <div>
-    <h2>Scrum</h2>
-    <h3>What is scrum?</h3>
+            <section id="scrum-methods">
+                <div class="section-inner">
+                    <h2>Scrum methods</h2>
+                    <h3>List of scrum methods</h3>
 
-    <p>Scrum is an agile project management framework that teams use to develop,
-        <br>
-        deliver and sustain complex products.
-        <br>
-        Agile is a mindset. Scrum is a way of working.</p>
-    </div>
+                    <ul>
+                        <li>Sprints</li>
+                        <li>Ceremonies</li>
+                        <li>Backlogs</li>
+                        <li>Standups</li>
+                        <li>Sprint reviews</li>
+                        <li>Retrospectives</li>
+                    </ul>
 
-<h3>Scrum methods</h3>
-<ul>
-    <li>Sprints</li>
-    <li>Ceremonies</li>
-    <li>Backlogs</li>
-    <li>Standups</li>
-    <li>Sprint reviews</li>
-    <li>Retrospectives</li>
-</ul>
+                    <h4 id="sprints">Sprints</h4>
+                    <p>A product is built in a series of iterations called sprints,
+                        this breaks down big complex projects into bit sized pieces to help make the projects
+                        more manageable. 
+                        <br>
+                        It also allows teams to ship high quality work faster and more frequently and
+                        gives them more flexability to adapt.
+                    </p>
+                    <h4 id="ceremonies">Ceremonies</h4>
+                    <p>Meetings or "ceremonies" are important parts of agile development.
+                        <br>
+                        Ceremonies consist of
+                        <ul>
+                            <li>Sprint planning</li>
+                            <li>Daily standup</li>
+                            <li>Iteration review</li>
+                            <li>Retrospectives</li>
+                        </ul>
+                    </p>
+                    <h4 id="backlogs">Backlogs</h4>
+                    <p>A well prioritised backlog makes release and iteration planning easier.
+                        <br>
+                        A product backlog is a prioritised list of work for the development team.
+                        <br>
+                        The most important items are shown at the top of the product backlog so the team knows what to deliver first.
+                    </p>
+                    <h4 id="standups">Standups</h4>
+                    <p>Standups are 15 minute daily meetings to set plans for the next 24 hours.
+                        <br>
+                        They help identify blockers(people who are struggling with tasks or are stuck)
+                        <br>
+                        and help identify ways of overcoming the problem.
+                        <br>
+                        <br>
+                        There are two standup methods:
+                        <ol>
+                            <li>Round robin</li>
+                            <li>Walk the board</li>
+                        </ol>
+                    </p>
+                    <h4 id="reviews">Sprint reviews</h4>
+                    <p>Sprint reviews are about demonstrating the hard work of the entire team.
+                        <br>
+                        All the team memberes describe the work they have done, and other members can ask questions,
+                        <br>
+                        try new features, and give feedback.
+                    </p>
+                    <h4 id="retro">Retrospectives</h4>
+                    <p>Retrospectives are meetings that are held at the end of an iteration.
+                        <br>
+                        During the retrospective, the team reflects on what happened in the iteration
+                        <br>
+                        and identifies actions for improvement going forward.
+                    </p>
+                </div>
+            </section>
 
-<h4>Sprints</h4>
-
-<p>A product is built in a series of iterations called sprints,
-this breaks down big complex projects into bit sized pieces to help make the projects
-more manageable. It also allows teams to ship high quality work faster and more frequently and
-gives them more flexability to adapt.
-</p>
-
-</body>
-
+        </main>
+        <footer>
+            copyright stuff. 
+        </footer>
+    </body>
 </html>
